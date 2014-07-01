@@ -1,0 +1,15 @@
+{
+  "name": "sample-service",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/pm2/bin/pm2 start server.js -i max --name sample-service",
+    "stop": "./node_modules/pm2/bin/pm2 stop sample-service"
+  },
+  "dependencies": {
+    "express": "^3.5.0",
+    "harp": "^0.12.1",
+    "jade": "*",
+    "pm2": "^0.9.1"
+  }
+}
